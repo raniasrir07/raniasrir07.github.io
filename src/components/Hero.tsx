@@ -8,7 +8,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  MapPin,
   Sparkles,
   Terminal,
 } from "lucide-react";
@@ -62,10 +61,6 @@ export function Hero({ lang }: HeroProps) {
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-4 text-xs font-medium text-slate-500 dark:text-slate-400">
-            <span className="inline-flex items-center gap-1.5">
-              <MapPin className="h-3.5 w-3.5 text-sky-500" />
-              {PROFILE.location[lang]}
-            </span>
             <span className="inline-flex items-center gap-1.5 font-mono">
               <Cpu className="h-3.5 w-3.5 text-sky-500" />
               ENSA Kénitra • GI2

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Copy, Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Check, Copy, Github, Linkedin, Mail, Send } from "lucide-react";
 import { Lang, PROFILE, UI_COPY } from "@/data/portfolio";
 
 interface ContactSectionProps {
@@ -86,33 +86,6 @@ export function ContactSection({ lang }: ContactSectionProps) {
                   </div>
                 </div>
               </a>
-
-              <a
-                href={`tel:${PROFILE.phone.replace(/\s+/g, "")}`}
-                className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50/70 p-4 transition-colors hover:border-sky-500/40 dark:border-white/10 dark:bg-white/[0.03]"
-              >
-                <Phone className="h-5 w-5 shrink-0 text-sky-500" />
-                <div>
-                  <div className="text-[11px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                    {t.phoneLabel}
-                  </div>
-                  <div className="font-mono text-sm font-semibold text-slate-900 dark:text-white">
-                    {PROFILE.phone}
-                  </div>
-                </div>
-              </a>
-
-              <div className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50/70 p-4 dark:border-white/10 dark:bg-white/[0.03]">
-                <MapPin className="h-5 w-5 shrink-0 text-sky-500" />
-                <div>
-                  <div className="text-[11px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                    {t.locationLabel}
-                  </div>
-                  <div className="text-sm font-semibold text-slate-900 dark:text-white">
-                    {PROFILE.location[lang]}
-                  </div>
-                </div>
-              </div>
 
               <div className="grid grid-cols-2 gap-3 pt-1">
                 <a

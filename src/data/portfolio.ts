@@ -55,12 +55,7 @@ export interface LeadershipItem {
 export const PROFILE = {
   name: "Rania SRIR",
   initials: "RS",
-  location: {
-    fr: "Kénitra, Maroc",
-    en: "Kenitra, Morocco",
-  },
   email: "raniasrir07@gmail.com",
-  phone: "+212 637 873 816",
   github: "https://github.com/raniasrir07",
   linkedin: "https://www.linkedin.com/in/rania-srir-73a302311/",
   githubHandle: "raniasrir07",
